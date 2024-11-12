@@ -1,0 +1,22 @@
+{
+	"name": "datalake200040_ActivityLog_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalake200040",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
